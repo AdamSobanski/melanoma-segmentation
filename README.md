@@ -12,9 +12,9 @@ trained on ISIC 2018 Task 1 dataset.
 | 4     | 0.1091     | 0.1340   |
 | 5     | 0.0972     | 0.1194   |
 
-5 epochs — chosen as a starting point to quickly verify that the model is learning. Not too few (1-2 epochs is not enough for the model to learn anything meaningful), not too many (risk of overfitting on a small dataset).
-Train Loss — error on training data. Decreases consistently from 0.206 → 0.097. The model learns with each epoch — progressively improving its ability to match predicted masks to ground truth.
-Val Loss — error on validation data (images the model never saw during training). Oscillates between 0.11-0.16 with no clear upward trend — the model is not overfitting and generalizes well to unseen images.
+- **5 epochs** — chosen as a starting point to quickly verify that the model is learning. Not too few (1-2 epochs is not enough for the model to learn anything meaningful), not too many (risk of overfitting on a small dataset).
+- **Train Loss** — error on training data. Decreases consistently from 0.206 → 0.097. The model learns with each epoch — progressively improving its ability to match predicted masks to ground truth.
+- **Val Loss** — error on validation data (images the model never saw during training). Oscillates between 0.11-0.16 with no clear upward trend — the model is not overfitting and generalizes well to unseen images.
 
 ## Stack
 - PyTorch
